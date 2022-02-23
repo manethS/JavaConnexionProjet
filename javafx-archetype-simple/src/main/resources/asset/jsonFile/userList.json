@@ -1,0 +1,26 @@
+[
+  {"user":{
+    "nom": "Holland",
+    "prenom": "Tom",
+    "login":"tom.holland",
+    "role": "Admin",
+    "password": "123456",
+    "dateBirth":"11-02-1995",
+    "email":"tom.holland@gmail.com",
+    "tel":"0654379800",
+    "address":"241 Central Park West, New York, NY 10024, États-Unis",
+    "photo":"src/main/resources/asset/images/user.png"
+  }},
+  {"user":{
+    "nom": "Adam",
+    "prenom": "Ken",
+    "login":"ken.adam",
+    "role": "User",
+    "password": "654321",
+    "dateBirth":"09-09-1999",
+    "email":"ken.adma@gmail.com",
+    "tel":"0456768707",
+    "address":"13 Central Park West, New York, NY 10024, États-Unis",
+    "photo":"src/main/resources/asset/images/user.png"
+  }}
+]

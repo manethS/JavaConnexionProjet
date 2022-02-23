@@ -1,0 +1,6 @@
+2022-01-09 11:50:49,585 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-01-09 11:51:10,624 [Worker-34: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.openjfx:javafx-archetype-simple:0.0.1-SNAPSHOT @ /Users/maneths/Desktop/2021 - 2022/Cours/Qualité_logiciel,tests_automatisés/project/javafx-archetype-simple/pom.xml.
+2022-01-09 11:51:12,741 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-09 11:51:12,744 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2022-01-09 11:51:12,774 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-09 11:51:12,774 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/maneths/Desktop/2021 - 2022/Cours/Qualité_logiciel,tests_automatisés/project/javafx-archetype-simple/src/test/resources

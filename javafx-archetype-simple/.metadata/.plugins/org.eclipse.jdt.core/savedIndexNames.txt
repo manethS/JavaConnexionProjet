@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+/Users/maneths/Desktop/2021 - 2022/Cours/Qualité_logiciel,tests_automatisés/project/javafx-archetype-simple/.metadata/.plugins/org.eclipse.jdt.core
+659177381.index
+939283709.index
+185561469.index
+2073715010.index
+2402981227.index
+1894383811.index
+1865797976.index
+4022685257.index
+4230200950.index
+3935104977.index
+3816399163.index
+520283529.index
+1586366669.index
+723493871.index
+2123251323.index
+3859857935.index
+2188910345.index

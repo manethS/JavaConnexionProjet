@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.javafx_archetype_simple.InscriptionController">
+   <children>
+      <Pane prefHeight="601.0" prefWidth="611.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="236.0" layoutY="46.0" text="Inscription" textFill="#b22e2e">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="173.0" text="Rôle : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="193.0" layoutY="121.0" text="Nom : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="361.0" layoutY="121.0" text="Prénom :">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="324.0" text="Email : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="369.0" text="Adresse : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="354.0" layoutY="324.0" text="Téléphone : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="56.0" layoutY="282.0" text="Date de naissance : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtNom" layoutX="236.0" layoutY="117.0" prefHeight="26.0" prefWidth="104.0" />
+            <TextField fx:id="txtPrenom" layoutX="426.0" layoutY="117.0" />
+            <TextField fx:id="txtEmail" layoutX="128.0" layoutY="320.0" prefHeight="26.0" prefWidth="207.0" />
+            <TextField fx:id="txtAdresse" layoutX="128.0" layoutY="365.0" prefHeight="26.0" prefWidth="450.0" />
+            <TextField fx:id="txtTel" layoutX="443.0" layoutY="320.0" prefHeight="26.0" prefWidth="135.0" />
+            <DatePicker fx:id="dateDdn" layoutX="198.0" layoutY="278.0" />
+            <Button fx:id="InscrireButton" layoutX="338.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#switchToCompte" prefHeight="31.0" prefWidth="104.0" text="S'incrire" textFill="#c91974" />
+            <ImageView fx:id="imgProfil" fitHeight="105.0" fitWidth="104.0" layoutX="54.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../../Downloads/IMG_2847.JPG" />
+               </image></ImageView>
+            <Button id="AjouterImgBtn" fx:id="AjouterImgBtn" layoutX="41.0" layoutY="221.0" mnemonicParsing="false" onAction="#modifierImage" text="Ajouter une image" textFill="#3e4386" />
+            <ComboBox fx:id="cbxRole" layoutX="237.0" layoutY="169.0" onAction="#comboBox" prefWidth="150.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="657.0" layoutX="523.0" layoutY="-315.0" rotate="-42.7" stroke="WHITE" strokeType="INSIDE" width="43.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.588998556137085" green="0.05025584623217583" blue="0.7236841917037964" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <TextField fx:id="txtCheminImage" layoutX="194.0" layoutY="224.0" prefHeight="26.0" prefWidth="387.0" promptText="Lien de l'image" />
+            <Button fx:id="AnnulerButton" layoutX="177.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#switchToConnexion" prefHeight="31.0" prefWidth="104.0" text="Annuler" textFill="#c91974" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

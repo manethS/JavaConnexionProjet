@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="544.0" prefWidth="666.0" spacing="20.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.javafx_archetype_simple.CompteuserController">
+    <children>
+      <Pane prefHeight="568.0" prefWidth="529.0" style="-fx-background-color: white;">
+         <children>
+              <Button fx:id="deconnexionButton" layoutX="421.0" layoutY="375.0" onAction="#switchToConnexion" text="Déconnexion" />
+              <Label layoutX="265.0" layoutY="38.0" text="Welcome" textFill="#e19b41">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a0b5e8" height="593.0" layoutY="-46.0" stroke="#a0b5e8" strokeType="INSIDE" width="19.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a0b5e8" height="611.0" layoutX="581.0" layoutY="-64.0" stroke="#a0b5e8" strokeType="INSIDE" width="19.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a0b5e8" height="814.0" layoutX="301.0" layoutY="-407.0" rotate="-89.9" stroke="#a0b5e8" strokeType="INSIDE" width="19.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a0b5e8" height="774.0" layoutX="304.0" layoutY="55.0" rotate="-89.9" stroke="#a0b5e8" strokeType="INSIDE" width="19.0" />
+            <Label layoutX="62.0" layoutY="287.0" text="Email : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lblEmail" fx:id="lblEmail" layoutX="134.0" layoutY="287.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="344.0" layoutY="287.0" text="Téléphone : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lblTel" fx:id="lblTel" layoutX="444.0" layoutY="287.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="335.0" text="Adresse : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lblAdresse" fx:id="lblAdresse" layoutX="134.0" layoutY="335.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="29.0" layoutY="73.0" prefHeight="194.0" prefWidth="538.0" style="-fx-background-color: #d2e9ff;">
+               <children>
+                  <Label layoutX="177.0" layoutY="71.0" text="Nom : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblNom" fx:id="lblNom" layoutX="234.0" layoutY="71.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="71.0" text="Prénom :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblPrenom" fx:id="lblPrenom" layoutX="400.0" layoutY="71.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="178.0" layoutY="28.0" text="Rôle : " textFill="#2c2727c4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblRole" fx:id="lblRole" layoutX="235.0" layoutY="28.0" text="Label" textFill="#2c2727c4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="178.0" layoutY="114.0" text="Date de naissance :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblDateN" fx:id="lblDateN" layoutX="317.0" layoutY="114.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="164.0" text="Photo : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField id="txtPhoto" fx:id="txtPhoto" layoutX="86.0" layoutY="160.0" prefHeight="26.0" prefWidth="283.0" promptText="Photo link" />
+                  <Button id="btnUpdate" fx:id="btnUpdate" layoutX="376.0" layoutY="160.0" mnemonicParsing="false" onAction="#updateImage" prefHeight="26.0" prefWidth="71.0" text="Update" />
+                  <Button id="btnDelete" fx:id="btnDelete" disable="true" layoutX="461.0" layoutY="160.0" mnemonicParsing="false" onAction="#delImage" prefHeight="26.0" prefWidth="71.0" text="Delete" />
+               </children>
+            </Pane>
+            <ImageView fx:id="imgProfil" fitHeight="137.0" fitWidth="113.0" layoutX="64.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../../../Downloads/Girl.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
